@@ -1,0 +1,339 @@
+@import "~bootstrap/scss/bootstrap";
+@import "./abstracts/variables";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+  font-family: 'SF Pro Display', sans-serif;
+}
+
+//SEZIONE NAVBAR
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 109rem;
+  margin: 0 auto;
+  padding: 0 2.2rem;
+  text-align: center;
+  height: 100%;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  /*così sta sopra a tutto*/
+  z-index: 10;
+  width: 100%;
+  height: 4.4rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  /*così si vede leggermente cosa c'è sotto*/
+  backdrop-filter: blur(2rem);
+}
+
+.nav {
+  height: 100%;
+}
+
+.nav-list {
+  width: 100%;
+  height: 100%;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-list-mobile {
+  display: none;
+}
+
+.nav-link {
+  font-size: 12px;
+  color: #e6e6e7;
+  padding: 0 2rem;
+
+  &:hover {
+    color: #FFFFFF;
+  }
+}
+
+.nav-link-apple {
+  height: 1.8rem;
+  background: url("/resources/images/Apple_logo_white.svg") center no-repeat;
+  background-size: contain;
+}
+
+.nav-link-search {
+  height: 1.4rem;
+  background: url("/resources/images/search.svg") center no-repeat;
+  background-size: contain;
+}
+
+.nav-link-bag {
+  height: 1.8rem;
+  background: url("/resources/images/bag.svg") center no-repeat;
+  background-size: contain;
+}
+
+
+//SEZIONE IPHONE 14 HERO
+
+.iphone-14-pro-image {
+  background: url("/resources/images/hero_iphone14.jpg") center no-repeat;
+}
+
+.title-heading {
+  font-size: 5rem;
+  line-height: 1.1;
+  letter-spacing: -.2rem;
+}
+
+.title-sub-heading {
+  font-size: 2.4rem;
+  margin-top: .6rem;
+  letter-spacing: -.1rem;
+  font-weight: 400;
+}
+
+.cta {
+  text-align: center;
+  margin-top: 1.8rem;
+}
+
+.cta-link {
+  font-size: 2.1rem;
+  display: inline-block;
+  margin-left: 2.5rem;
+  margin-right: 2rem;
+}
+
+//.cta-link:hover {
+//  border-bottom: 1px solid $primary;
+//}
+
+.gift-image {
+  background: url("/resources/images/afterhero.jpg") center no-repeat;
+  height: 100%;
+  display: flex;
+}
+
+.gift-text {
+  position: absolute;
+  width: 100%;
+  color: #FFFFFF;
+
+  &-title {
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 50px;
+  }
+
+  &-subtitle {
+    font-size: 25px;
+    line-height: 25px;
+  }
+}
+
+.ipad-image {
+  background: url("/resources/images/ipads.jpg") center no-repeat;
+  height: 100%;
+
+  &-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+
+  &-title {
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 50px;
+  }
+
+  &-subtitle {
+    font-size: 25px;
+    line-height: 25px;
+  }
+}
+
+.watch {
+  background: url("/resources/images/watch.jpg") center no-repeat;
+}
+
+.title-heading-watch {
+  height: 8rem;
+  background: url("/resources/images/watch_small.png") center no-repeat;
+  background-size: auto 8rem;
+  margin-top: 5rem;
+}
+
+.title-sub-heading {
+  font-size: 30px;
+}
+
+.showcase-image {
+  height: 70rem;
+  width: auto;
+  border-top: .6rem solid #FFFFFF;
+  border-bottom: .6rem solid #FFFFFF;
+  position: relative;
+  background-size: cover;
+}
+
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 50%);
+  overflow: hidden;
+  margin: 1rem;
+
+  .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .image-grid-1 {
+    max-height: 60rem;
+    min-height: 50rem;
+    background: url("/resources/images/iphonegrid.jpg") center no-repeat;
+    background-size: cover;
+  }
+
+  .image-grid-2 {
+    max-height: 60rem;
+    min-height: 50rem;
+    height: 100%;
+    background: url("/resources/images/ipads.jpg") center no-repeat;
+    background-size: cover;
+  }
+
+  .image-grid-3 {
+    max-height: 60rem;
+    min-height: 50rem;
+    height: 100%;
+    background: url("/resources/images/airpods.jpg") center no-repeat;
+    background-size: cover;
+  }
+
+  .image-grid-4 {
+    max-height: 60rem;
+    min-height: 50rem;
+    height: 100%;
+    background: url("/resources/images/watch2.jpg") center no-repeat;
+    background-size: cover;
+  }
+
+  .image-grid-5 {
+    max-height: 60rem;
+    min-height: 50rem;
+    height: 100%;
+    background: url("/resources/images/airmacs.png") center no-repeat;
+    background-size: cover;
+  }
+
+  .image-grid-6 {
+    max-height: 60rem;
+    min-height: 50rem;
+    height: 100%;
+    background: url("/resources/images/homepod.jpg") center no-repeat;
+    background-size: cover;
+  }
+
+}
+
+.grid-container {
+  height: 100%;
+}
+
+.cta-grid {
+  display: flex;
+
+  .cta-link-grid {
+    font-size: 16px;
+  }
+}
+
+.title-grid {
+  margin-bottom: 0;
+}
+
+ol.carousel-indicators {
+  position: absolute;
+  bottom: 0;
+}
+
+.carousel .carousel-indicators li {background-color: red;}
+.carousel .carousel-indicators li.active {background-color: blue;}
+
+.title-heading-watch-black {
+  height: 8rem;
+  background: url("/resources/images/watch_black.png") center no-repeat;
+  background-size: auto 8rem;
+  margin-top: 5rem;
+}
+
+
+.carousel-inner > .carousel-item {
+  /*disables white flash*/
+  -webkit-transition: -webkit-transform .5s ease-in-out;
+  -o-transition: -o-transform .5s ease-in-out;
+  transition: transform .5s ease-in-out;
+}
+
+.carousel-inner > .item.next,
+.carousel-inner > .item.active.right {
+  left: 0;
+  -webkit-transform: translate3d(33%, 0, 0);
+  transform: translate3d(33%, 0, 0);
+}
+
+.carousel-inner > .item.prev,
+.carousel-inner > .item.active.left {
+  left: 0;
+  -webkit-transform: translate3d(-33%, 0, 0);
+  transform: translate3d(-33%, 0, 0);
+}
+
+.carousel-control.left, .carousel-control.right {
+  background: rgba(255, 255, 255, 0.5);
+  width: 25%;
+}
+
+.carousel-control {
+  opacity: 1 !important;
+}
+
+.carousel {
+  overflow: hidden;
+}
+
+.carousel-inner {
+  width: 150% !important;
+  left: -25%;
+}
+
+footer {
+  display: flex !important;
+  justify-content: space-between;
+  background: #f5f5f7;
+}

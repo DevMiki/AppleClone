@@ -1,0 +1,24 @@
+{
+  "name": "apple",
+  "version": "1.0.0",
+  "description": "clone of the Apple website",
+  "source": "./src/index.html",
+  "scripts": {
+    "dev": "parcel",
+    "build": "parcel build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@mikidev:DevMiki/AppleClone.git"
+  },
+  "author": "Michele Marino",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.8.2",
+    "parcel": "^2.8.2"
+  }
+}
